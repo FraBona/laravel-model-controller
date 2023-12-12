@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/*Route::get('/', function () {
-    return view('layouts.index');
-});*/
+Route::get('/', function () {
+    return view('index');
+});
 
 Route::get('/', [PageController::class, 'index'])->name('home');
